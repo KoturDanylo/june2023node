@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0e8608ca-2c0b-4cb3-aac3-49951cba39ff" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +70,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704833339730</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="kn">
+      <option name="closed" value="true" />
+      <created>1704899694214</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1704899694214</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,7 +87,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="kjnk" />
     <MESSAGE value="kjnkm" />
-    <option name="LAST_COMMIT_MESSAGE" value="kjnkm" />
+    <MESSAGE value="kn" />
+    <option name="LAST_COMMIT_MESSAGE" value="kn" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
