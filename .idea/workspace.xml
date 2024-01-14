@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0e8608ca-2c0b-4cb3-aac3-49951cba39ff" name="Changes" comment="">
+    <list default="true" id="0e8608ca-2c0b-4cb3-aac3-49951cba39ff" name="Changes" comment="dcdcроио">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,7 @@
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "",
+    "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
@@ -76,6 +78,7 @@
       <workItem from="1705227210216" duration="2581000" />
       <workItem from="1705231079020" duration="126000" />
       <workItem from="1705231213134" duration="678000" />
+      <workItem from="1705231904030" duration="699000" />
     </task>
     <task id="LOCAL-00001" summary="dcdc">
       <option name="closed" value="true" />
@@ -85,7 +88,31 @@
       <option name="project" value="LOCAL" />
       <updated>1705227203238</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dcdc">
+      <option name="closed" value="true" />
+      <created>1705232064536</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705232064536</updated>
+    </task>
+    <task id="LOCAL-00003" summary="dcdcроио">
+      <option name="closed" value="true" />
+      <created>1705232102457</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1705232102457</updated>
+    </task>
+    <task id="LOCAL-00004" summary="dcdcроио">
+      <option name="closed" value="true" />
+      <created>1705232428774</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705232428774</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,7 +120,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="dcdc" />
-    <option name="LAST_COMMIT_MESSAGE" value="dcdc" />
+    <MESSAGE value="dcdcроио" />
+    <option name="LAST_COMMIT_MESSAGE" value="dcdcроио" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
