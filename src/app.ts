@@ -1,6 +1,6 @@
+import { configs } from "@typescript-eslint/eslint-plugin";
 import express, { Request, Response } from "express";
 
-import { configs } from "./configs";
 import { read, write } from "./fs.service";
 const app = express();
 
