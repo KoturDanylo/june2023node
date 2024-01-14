@@ -1,6 +1,8 @@
 import * as fs from "fs/promises";
 import * as path from "path";
 
+
+
 const pathToFile = path.join(process.cwd(), "db.json");
 
 const read = async () => {
