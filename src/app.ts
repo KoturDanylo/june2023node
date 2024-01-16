@@ -1,5 +1,5 @@
 import express, { NextFunction, Request, Response } from "express";
-import * as mongoose from "mongoose";
+import mongoose from "mongoose";
 
 import { configs } from "./configs/config";
 import { ApiError } from "./errors/api.error";
