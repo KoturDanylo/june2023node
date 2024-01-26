@@ -3,7 +3,7 @@ import { Router } from "express";
 import { adminController } from "../controllers/admin.controller";
 import { ERole } from "../enums/role.enum";
 import { authMiddleware } from "../middlewares/auth.middleware";
-import { userMiddleware } from "../middlewares/user.middlewares";
+import { userMiddleware } from "../middlewares/user.middleware";
 
 const router = Router();
 

@@ -24,6 +24,7 @@ const userSchema = new Schema(
     role: {
       type: String,
       enum: ERole,
+
       default: ERole.USER,
     },
     password: {
