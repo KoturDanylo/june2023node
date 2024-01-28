@@ -5,16 +5,16 @@ import { regexConstant } from "../constants/regex.constant";
 export class UserValidator {
   private static password = joi.string().regex(regexConstant.PASSWORD).trim();
   private static email = joi
-    .string()
-    .regex(regexConstant.EMAIL)
-    .lowercase()
-    .trim();
+      .string()
+      .regex(regexConstant.EMAIL)
+      .lowercase()
+      .trim();
   private static userName = joi.string().min(3).max(50).trim().messages({
     "string.empty": "{{#label}} not be empty",
     "string.max":
-      "{{#label}} length must be less than or equal to {{#limit}} characters long2",
+        "{{#label}} length must be less than or equal to {{#limit}} characters long2",
     "string.min":
-      "{{#label}} length must be at least {{#limit}} characters long2",
+        "{{#label}} length must be at least {{#limit}} characters long2",
 
     // 'string.alphanum': '{{#label}} must only contain alpha-numeric characters',
     // 'string.base': '{{#label}} must be a string',
