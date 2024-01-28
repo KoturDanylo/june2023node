@@ -44,9 +44,9 @@ class TokenService {
   }
 
   public checkAuthToken(
-    token: string,
-    type: ETokenType,
-    role: ERole,
+      token: string,
+      type: ETokenType,
+      role: ERole,
   ): ITokenPayload {
     switch (role) {
       case ERole.ADMIN:
@@ -64,6 +64,11 @@ class TokenService {
         case EActionTokenType.FORGOT:
           secret = configs.JWT_FORGOT_ACTION_SECRET;
           break;
+        case EActionTokenType.ACTIVATE:
+          secret = configs.JWT_ACTION_ACTIVATE_SECRET;
+          break;
+        default:
+          throw new ApiError("checkActionToken error", 500);
       }
 
       return jwt.verify(actionToken, secret) as ITokenPayload;
@@ -73,8 +78,8 @@ class TokenService {
   }
 
   public createActionToken(
-    payload: ITokenPayload,
-    tokenType: EActionTokenType,
+      payload: ITokenPayload,
+      tokenType: EActionTokenType,
   ) {
     let secret: string;
 
@@ -83,6 +88,10 @@ class TokenService {
         secret = configs.JWT_FORGOT_ACTION_SECRET;
         break;
       case EActionTokenType.ACTIVATE:
+        secret = configs.JWT_ACTION_ACTIVATE_SECRET;
+        break;
+      default:
+        throw new ApiError("createActionToken error", 500);
     }
 
     return jwt.sign(payload, secret, {
