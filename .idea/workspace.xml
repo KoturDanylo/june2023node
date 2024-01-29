@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e8608ca-2c0b-4cb3-aac3-49951cba39ff" name="Changes" comment="dcdcроио">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configs/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routers/auth.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/auth.router.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/token.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/token.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/views/forgot-password.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/views/forgot-password.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/views/welcome.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/views/welcome.hbs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/token.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/token.type.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/user.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/user.type.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +234,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706259261714</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="dcdcроио">
+      <option name="closed" value="true" />
+      <created>1706464587180</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1706464587180</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
