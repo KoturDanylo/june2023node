@@ -2,10 +2,13 @@ import express, { NextFunction, Request, Response } from "express";
 import * as mongoose from "mongoose";
 
 import { configs } from "./configs/config";
+import { ERole } from "./enums/role.enum";
 import { ApiError } from "./errors/api.error";
+import { userRepository } from "./repositories/user.repository";
 import { adminRouter } from "./routers/admin.router";
 import { authRouter } from "./routers/auth.router";
 import { userRouter } from "./routers/user.router";
+import {runAllCronJobs} from "./crons";
 
 const app = express();
 
@@ -29,5 +32,13 @@ app.use(
 const PORT = configs.PORT;
 app.listen(PORT, async () => {
   await mongoose.connect(configs.DB_URL);
+  const user = await userRepository.getOneByParams({});
+  if (!user) {
+    await userRepository.create({
+      role: ERole.SUPER_ADMIN,
+      email: "super_admin@gmail.com",
+    });
+  }
+  runAllCronJobs();
   console.log(`Server has started on PORT ${PORT}`);
 });

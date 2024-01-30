@@ -44,9 +44,9 @@ class TokenService {
   }
 
   public checkAuthToken(
-      token: string,
-      type: ETokenType,
-      role: ERole,
+    token: string,
+    type: ETokenType,
+    role: ERole,
   ): ITokenPayload {
     switch (role) {
       case ERole.ADMIN:
@@ -78,8 +78,8 @@ class TokenService {
   }
 
   public createActionToken(
-      payload: ITokenPayload,
-      tokenType: EActionTokenType,
+    payload: ITokenPayload,
+    tokenType: EActionTokenType,
   ) {
     let secret: string;
 
