@@ -27,4 +27,4 @@ const handler = async function () {
   }
 };
 
-export const notificationForOltVisitors = new CronJob("* * * * * *", handler);
+export const notificationForOltVisitors = new CronJob("* * * 30 * *", handler);
