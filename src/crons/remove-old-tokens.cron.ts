@@ -2,25 +2,32 @@ import { CronJob } from "cron";
 import dayjs from "dayjs";
 import utc from "dayjs/plugin/utc";
 
+import { EEmailAction } from "../enums/email-action.enum";
 import { ApiError } from "../errors/api.error";
-import { tokenRepository } from "../repositories/token.repository";
+import { userRepository } from "../repositories/user.repository";
+import { emailService } from "../services/email.service";
 
 dayjs.extend(utc);
 
-const removeOldTokens = async function () {
+const handler = async function () {
   try {
-    const previousMonth = dayjs().utc().subtract(30, "d");
+    const date = dayjs().utc().subtract(15, "d").toDate();
 
-    await tokenRepository.deleteManyByParams({
-      createdAt: { $lte: previousMonth },
-    });
+    const users = await userRepository.findWithoutActivityAfter(date);
+
+    await Promise.all(
+      users.map(async (user) => {
+        await emailService.sendMail(user.email, EEmailAction.OLD_VISIT, {
+          name: user.name,
+        });
+      }),
+    );
   } catch (e) {
-    throw new ApiError(e.meesage, e.status);
+    throw new ApiError(e.message, e.status);
   }
 };
 
-export const tokensRemover = new CronJob("* * * * * *", removeOldTokens);
-
+export const notificationForOltVisitors = new CronJob("* 0 * * * *", handler);
 // lte - less that equal
 // gte - greater that equal
 // lt - less than
