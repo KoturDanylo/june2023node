@@ -4,6 +4,7 @@ import { userController } from "../controllers/user.controller";
 import { ERole } from "../enums/role.enum";
 import { authMiddleware } from "../middlewares/auth.middleware";
 import { commonMiddleware } from "../middlewares/common.middleware";
+import { fileMiddleware } from "../middlewares/file.middlleware";
 import { UserValidator } from "../validators/user.validator";
 
 const router = Router();
@@ -28,5 +29,11 @@ router.delete(
 );
 
 router.get("/:id", commonMiddleware.isIdValid, userController.getById);
+
+router.post(
+  "/:userId/avatar",
+  fileMiddleware.isAvatarValid,
+  userController.uploadAvatar,
+);
 
 export const userRouter = router;
