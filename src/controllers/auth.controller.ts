@@ -1,10 +1,10 @@
 import { NextFunction, Request, Response } from "express";
 
+import { UserPresenter } from "../presenters/user.presenter";
 import { authService } from "../services/auth.service";
 import { ILogin } from "../types/auth.type";
 import { ITokenPayload } from "../types/token.type";
 import { IUser } from "../types/user.type";
-import {UserPresenter} from "../presenters/user.presenter";
 
 export interface IChangePassword {
   oldPassword: string;
@@ -82,9 +82,9 @@ class AuthController {
   }
 
   public async setForgotPassword(
-      req: Request,
-      res: Response,
-      next: NextFunction,
+    req: Request,
+    res: Response,
+    next: NextFunction,
   ) {
     try {
       const token = req.params.token;
