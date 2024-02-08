@@ -69,14 +69,21 @@ class UserService {
     }
 
     if (user.avatar) {
-      // stripe
-      // todo: remove old avatar
-      // check for command how to delete avatar
+      await s3Service.deleteFile(user.avatar);
     }
 
     const filePath = await s3Service.uploadFile(avatar, EFileType.User, userId);
 
     await userRepository.updateById(userId, { avatar: filePath });
+  }
+
+  public async deleteAvatar(userId: string) {
+    const user = await userRepository.getById(userId);
+
+    if (user.avatar) {
+      await s3Service.deleteFile(user.avatar);
+    }
+    await userRepository.updateById(userId, { avatar: null });
   }
 }
 

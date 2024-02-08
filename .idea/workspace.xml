@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e8608ca-2c0b-4cb3-aac3-49951cba39ff" name="Changes" comment="dcdcроио">
-      <change afterPath="$PROJECT_DIR$/src/configs/avatar.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/middlewares/file.middlleware.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/s3.service .ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/configs/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/configs/config.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/user.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/presenters/user.presenter.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/presenters/user.presenter.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routers/user.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routers/user.router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/s3.service .ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/s3.service .ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/user.type.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/user.type.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +28,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="hw-9-twilio-sms" />
+        <entry key="$PROJECT_DIR$" value="hw-10-aws" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -57,7 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "hw-10-aws",
+    "git-widget-placeholder": "hw-10-aws-delate",
     "javascript.nodejs.core.library.configured.version": "21.5.0",
     "javascript.nodejs.core.library.typings.version": "20.11.5",
     "node.js.detected.package.eslint": "true",
@@ -125,7 +116,7 @@
       <workItem from="1705436170468" duration="19211000" />
       <workItem from="1707303120078" duration="24000" />
       <workItem from="1707303152225" duration="695000" />
-      <workItem from="1707303857351" duration="8768000" />
+      <workItem from="1707303857351" duration="13685000" />
     </task>
     <task id="LOCAL-00001" summary="dcdc">
       <option name="closed" value="true" />
@@ -303,7 +294,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707385381479</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="dcdcроио">
+      <option name="closed" value="true" />
+      <created>1707390782151</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1707390782151</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

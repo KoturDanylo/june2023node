@@ -27,13 +27,18 @@ router.delete(
   authMiddleware.checkAccessToken(ERole.USER),
   userController.deleteMe,
 );
-
-router.get("/:id", commonMiddleware.isIdValid, userController.getById);
-
 router.post(
-  "/:userId/avatar",
+  "/me/avatar",
+  authMiddleware.checkAccessToken(ERole.USER),
   fileMiddleware.isAvatarValid,
   userController.uploadAvatar,
 );
+router.delete(
+  "/me/avatar",
+  authMiddleware.checkAccessToken(ERole.USER),
+  userController.deleteAvatar,
+);
+
+router.get("/:id", commonMiddleware.isIdValid, userController.getById);
 
 export const userRouter = router;
